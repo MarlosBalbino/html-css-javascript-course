@@ -17,8 +17,8 @@ function setUserName() {
     const myName = prompt("Por favor, digite o seu nome");
     localStorage.setItem("name", myName);
     myHeading.textContent = `Mozilla é legal, ${myName}`;
- }
+}
 
- myButton.onclick = () => {
+myButton.onclick = () => {
     setUserName();
- };
+};
