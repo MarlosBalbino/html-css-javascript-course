@@ -1,1 +1,1 @@
-# htmlcourse
+# HTML, CSS and JavaScript Course

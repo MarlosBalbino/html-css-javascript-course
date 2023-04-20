@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - Tabela, linha e colunas</title>
+
+    <style>
+    
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .responsive-table {
+            box-sizing: border-box;
+            background-color: aqua;
+            padding: 5px;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table caption {
+            font-size: 11px;
+            font-style: italic;
+            caption-side: bottom;
+            text-align: left;
+            margin-top: 5px;
+
+        }
+
+        table th, table td {
+            border: 1px solid grey;
+            padding: 5px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Tabela</p>
+
+    <div class="responsive-table">
+        <table>
+            <caption>Descrição da tabela</caption>
+            <thead>
+                <tr>
+                    <th>Título1</th>
+                    <th>Título2</th>
+                    <th>Título3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Corpo1 e 2</td>
+                    <td>Corpo3</td>
+                </tr>
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

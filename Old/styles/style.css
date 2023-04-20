@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+    /* color: white; */
+    background-color: #171717;
+}
+
+.flex-container {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: center;
+    gap: 30px;
+    padding: 30px;
+    height: 50vh;
+    transition: 500ms;
+    position: fixed;
+    width: 99.2vw;
+    width: 100%;
+    height: 60px;
+}
+
+.flex-container:hover {
+    background-color: black;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    /* flex-grow: 1; */
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    transition: 300ms;
+}
+
+.flex-item:hover {
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.flex-item:active {
+    transition: 0ms;
+    background-color: white;
+}
+
+.main-grid {
+    display: grid;
+    padding: 25px;
+    row-gap: 50px;
+    grid-template-areas:
+        "i1"
+        "i2"
+    ;
+}
+
+.top-banner {
+    background-color: darkcyan;
+    grid-area: i1;
+    width: 93vw;
+    aspect-ratio: 21/9;
+    justify-self: center;
+    border-radius: 25px;
+}
+
+.grid-container {
+
+    /* border: 5px blueviolet solid; */
+    /* background-color: darkcyan; */
+    /* margin: 10px; */
+
+    display: grid;
+    /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, 336px);
+    /* grid-template-rows: repeat(3, 189px); */
+    justify-content: center;
+    align-content: center;
+    
+    gap: 50px 25px;
+    padding: 5px;
+    /* height: 40vh; */
+
+    grid-area: i2;
+}
+
+.item {
+    /* border: 5px cyan solid; */
+    background-color: darkcyan;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    width: 336px;
+    height: 189px;
+    /* margin: 5px; */
+}
+
+.item:hover {
+    background-color: cyan;
+}
+
+/* .item-12 {
+    background-color: blueviolet;
+} */

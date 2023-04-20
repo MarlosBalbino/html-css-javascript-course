@@ -1,6 +1,6 @@
 html {
-    font-size: 10px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels */
-    font-family: "Open Sans", sans-serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
     color: white;
 
     background-color: #171717;
@@ -11,7 +11,7 @@ body {
     width: 600px;
     margin: 0 auto;
     background-color: #101010;
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     border: 5px solid white;
 }
 
@@ -33,3 +33,10 @@ p, li {
     line-height: 2;
     letter-spacing: 1px;
 }
+
+div {
+    display: inline-block;
+    width: 200px;
+    background-color: blueviolet;
+}
+
